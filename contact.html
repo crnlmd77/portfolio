@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Contact @ Vvintage</title>
+</head>
+<body>
+    <nav>
+        <div class="navTop d-flex align-items-center">
+            <div class="navItem">
+                <a href="index.html" class="logo-link">
+                    <img src="Images/assets/vvnlogo.png" alt="Logo" class="logo" width="150px">
+                </a>
+            </div>
+            <div class="navItem">
+                <div class="dropdown">
+                    <a href="#" class="btn btn-link dropdown-toggle" id="languageSelector" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="search-icon" src="Images/assets/globe.png" alt="Globe Icon" width="16px">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="languageSelector">
+                        <li><a class="dropdown-item" href="#">🇬🇧 English</a></li>
+                        <li><a class="dropdown-item" href="#">🇨🇳 Chinese</a></li>
+                        <li><a class="dropdown-item" href="#">🇪🇸 Spanish</a></li>
+                    </ul>
+                </div>
+                <a href="#" class="navLinkTop" target="_blank" onclick="window.location.href='contact.html'">Careers</a>        
+                <a href="#" class="navLinkTop" target="_blank" onclick="window.location.href='about.html'">About</a>
+                <a href="#" class="navLinkTop" target="_blank" onclick="window.location.href='#'">Tech </a>
+            </div>
+        </div>   
+    </nav>
+    
+    <div class="contact-background" >
+        <div class="contact-container mt-5">
+            <h1 class="contact-title">Hi, Vvintage Shopper!</h1>
+            <p class="contact-subtitle d-flex justify-content-center">We’d love to hear from you!</p>
+
+            <form class="contact-form">
+                <label for="name">Full Name</label>
+                <input class="input" type="text" id="name" placeholder="Your Name" required>
+                <label for="email">Email</label>
+                <input class="input" type="email" id="email" placeholder="Your Email" required>
+                <label for="message">Message</label>
+                <textarea class="textArea" id="message" placeholder="Write your message here..." required></textarea>
+                <button type="submit" class="contact-button">Send Message</button>
+                <p id="confirmationMessage">Thank you for reaching us! We'll get back to you.</p>
+            </form>
+
+            <div class="contact-info">
+                <h5><i class="fas fa-map-marker-alt"></i> Our Location:</h5>
+                <p>123 Elf St., Oceanic Ave., Brazil</p>
+                <h5><i class="fas fa-phone-alt"></i> Contact Number:</h5>
+                <p>+139 2345 6790</p>
+                <h5><i class="fas fa-envelope"></i> Email:</h5>
+                <p><a href="mailto:messageus@vvintage.com">messageus@vvintage.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+    <div class="footerTop">
+        <div class="footer ms-5 me-5">
+            <div class="footer-column">
+                <h3>ABOUT SHOPEE</h3>
+                <a class="footer-text" href="#">Seller Centre</a>
+                <a class="footer-text" href="#">Vvintage Mall</a>
+                <a class="footer-text" href="#">Vvintage Blog</a>
+                <a class="footer-text" href="#">Privacy Policy</a>
+                <a class="footer-text" href="#">Tech @ Vvvintage</a>
+                <a class="footer-text" href="contact.html">Contact Us</a>
+            </div>
+            <div class="footer-column">
+                <h3>PAYMENT</h3>
+                <div class="logos">
+                    <img class="footer-text" src="Images/payment/dpay.png" alt="Dragonpay"><br>
+                    <img class="footer-text" src="Images/payment/mc.png" alt="Mastercard"><br>
+                    <img class="footer-text" src="Images/payment/visa.png" alt="Visa"><br>
+                    <img class="footer-text" src="Images/payment/bpi.png" alt="BPI"><br>
+                    <img class="footer-text" src="Images/payment/maya.png" alt="PayMaya">
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>LOGISTICS</h3>
+                <div class="logos">
+                    <img class="footer-text" src="Images/logistics/gogo.png" alt="GoGo Xpress"><br>
+                    <img class="footer-text" src="images/logistics/ninjavan.png" alt="Ninja Van"><br>
+                    <img class="footer-text" src="Images/logistics/jnt.png" alt="J&T Express"><br>
+                    <img class="footer-text" src="Images/logistics/2go.png" alt="2GO Express"><br>
+                    <img class="footer-text" src="Images/logistics/flash.png" alt="Flash Express">
+                </div>
+            </div>
+        <div class="footer-column">
+                <h3>FOLLOW US</h3>
+                <div class="social-icon">
+                    <img src="Images/socialmedia/fb.png" alt="Facebook" width="21px" height="27px"><br>
+                    <img src="Images/socialmedia/ig.png" alt="Instagram" width="21px" height="27px"><br>
+                    <img src="Images/socialmedia/x.png" alt="X" width="21px" height="27px"><br>
+                    <img src="Images/socialmedia/linkedin.png" alt="LinkedIn" width="21px" height="27px"><br>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <br><br>
+
+    <footer class="footer-end text-white mx-5">
+        <p>&copy; 2025 Vvintage. All rights reserved.</p>
+        <div class="country mx-3 flex-wrap justify-content-center">
+            <p>Countries:</p>
+            <a href="index.html" class="country-list text-white" target="_blank">Singapore</a> |
+            <a href="index.html" class="country-list text-white" target="_blank">Indonesia</a> |
+            <a href="index.html" class="country-list text-white" target="_blank">Thailand</a> |
+            <a href="index.html" class="country-list text-white" target="_blank">Malaysia</a> |
+            <a href="index.html" class="country-list text-white" target="_blank">Philippines</a> |
+            <a href="index.html" class="country-list text-white" target="_blank">Vietnam</a> |
+            <a href="index.html" class="country-list text-white" target="_blank">Brunei</a> |
+            <a href="index.html" class="country-list text-white" target="_blank">Brazil</a>  
+        </div>
+    </footer>
+
+    <script>
+    document.querySelector(".contact-form").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        let message = document.getElementById("confirmationMessage");
+        message.style.display = "block";
+        message.textContent = "Thank you for reaching us! We'll get back to you.";
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

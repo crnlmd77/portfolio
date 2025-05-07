@@ -1,0 +1,262 @@
+/* CSS for Shop page */
+.container {
+    background-color: rgba(136, 127, 110, 0.8); /* Makes text background slightly transparent */
+}
+
+.category-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps text color consistent */
+}
+
+.category-box {
+    text-align: center;
+    background-color: #dfdbd6;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.category-box:hover {
+    transform: scale(1.1); 
+}
+
+.category-img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.text-color {
+    color: white; 
+    margin-bottom: 10px;
+    font-size: 20px; /* Font size for the text */
+}
+
+.custom-style {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.productButton {
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.productButton:hover {
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.addtocartButton {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.addtocartButton:hover {
+    background-color: #333;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+/* Add to Cart design in Shop2 Page */
+.added-message {
+    display: none;
+    color: #756a54;
+    font-size: 14px;
+    margin-top: 5px;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    top: 210px; 
+    left: 150px;
+    transform: translateX(-50%); 
+    padding: 5px 10px;
+}
+
+.cart-container:focus-within .added-message {
+    display: block;
+}
+
+/* CSS for About page */
+.background {
+    background-image: url('Images/assets/bgperson.png'); 
+    background-repeat: repeat;
+    background-size: auto;
+    padding: 20px;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8); /* Makes text background slightly transparent */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 23px; 
+}
+
+.aboutText {
+    font-size: 14px;
+    text-align: center;
+}
+
+.aboutList li {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.img {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none; 
+    padding-left: 0; 
+}
+
+li::before {
+    font-size: 18px;
+    color: black;
+}
+
+.about {
+    text-align: center;
+    color: #5a5353;
+    font-size: 14px;
+}
+
+
+/* Contact Page CSS */
+.contact-container {
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    background: #fff8e7;
+    border: 2px solid #b3926b;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-title {
+    font-style:  italic;
+    font-size: 36px;
+    font-weight: bold;
+    color: #5a3e2b;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    font-style: italic;
+    color: #8b5e3c;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input, .textArea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #b3926b;
+    background: #fff5e1;
+    font-size: 14px;
+}
+
+.contact-button {
+    width: 80%;
+    background: #8b5e3c;
+    color: white;
+    padding: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-button:hover {
+    background: #5a3e2b;
+}
+
+.contact-info {
+    margin-top: 20px;
+    color: #615642;
+}
+
+p {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+#confirmationMessage {
+    display: none;
+    color: forestgreen;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Responsive to Mobile Screens (Max width 768px) - Contact Page */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1.contact-title {
+        font-size: 28px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 14px;
+    }
+
+    .contact-info {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .navTop {
+        flex-direction: column; /* Stacks navbar items vertically */
+        text-align: center;
+    }
+
+    .navItem {
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive to Small Phones (Max width 480px) - Contact Page*/
+@media screen and (max-width: 480px) {
+    h1.contact-title {
+        font-size: 24px;
+    }
+
+    .contact-subtitle {
+        font-size: 16px;
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 12px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+}
+
